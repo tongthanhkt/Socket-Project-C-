@@ -128,6 +128,7 @@ namespace Login {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(237, 28);
 			this->textBox1->TabIndex = 1;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
 			// panel1
 			// 
@@ -146,6 +147,7 @@ namespace Login {
 			this->textBox2->PasswordChar = '*';
 			this->textBox2->Size = System::Drawing::Size(237, 28);
 			this->textBox2->TabIndex = 1;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
 			// panel2
 			// 
@@ -185,8 +187,6 @@ namespace Login {
 			// 
 			this->checkBox1->AutoSize = true;
 			this->checkBox1->BackColor = System::Drawing::SystemColors::Desktop;
-			this->checkBox1->Checked = true;
-			this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
 			this->checkBox1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->checkBox1->ForeColor = System::Drawing::SystemColors::Info;
@@ -236,6 +236,10 @@ namespace Login {
 	}
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
