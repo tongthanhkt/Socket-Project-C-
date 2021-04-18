@@ -1,0 +1,3 @@
+C:\Users\hieue\source\repos\Login\Login\Debug\Login.vcxprojAssemblyReference.cache
+C:\Users\hieue\source\repos\Login\Login\Debug\Login.MyForm.resources
+C:\Users\hieue\source\repos\Login\Login\Debug\Login.vcxproj.GenerateResource.cache
